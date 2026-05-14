@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background: #ffffff;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  overscroll-behavior: none;
+  display: flex;
+}*/
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  overscroll-behavior: none;
+
+  background: #ffffff;
+}
+#root {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+body.dark-mode #main {
+  background-color: #1e1f20;
+  color: white;
+}
+
+body.dark-mode #main-bottom {
+  background-color: #1e1f20;
+}
+
+body.dark-mode #search-box,
+body.dark-mode #card,
+body.dark-mode #sidebar {
+  background-color: #2b2c2f;
+}
+
+body.dark-mode #search-input,
+body.dark-mode #bottom-info,
+body.dark-mode #recent-entry,
+body.dark-mode #recent-chats-title {
+  color: white;
+}
+body.dark-mode #gallery-icon,
+body.dark-mode #mic-icon,
+body.dark-mode #send-icon,
+body.dark-mode #message-icon,
+body.dark-mode #delete-icon,
+body.dark-mode #menu,
+body.dark-mode #plus-icon,
+body.dark-mode #question-icon,
+body.dark-mode #history-icon,
+body.dark-mode #settings-icon {
+  filter: invert(1);
+}
+body.dark-mode #main,
+body.dark-mode #nav,
+body.dark-mode #greet,
+body.dark-mode #card p,
+body.dark-mode #result,
+body.dark-mode #bottom-info,
+body.dark-mode #recent-chats-title,
+body.dark-mode #recent-entry,
+body.dark-mode #bottom-item,
+body.dark-mode #new-chat {
+  color: white;
+}
+body.dark-mode #search-input {
+  color: white;
+}
+
+body.dark-mode #search-input::placeholder {
+  color: #b8b8b8;
+}
+body.dark-mode {
+  background-color: #1e1f20;
+  color: white;
+}
+
+body.dark-mode #cards #card {
+  background-color: #2b2c2f;
+  border: 1px solid #3a3b3f;
+}
+
+body.dark-mode #cards #card:hover {
+  background-color: #35363a;
+}
+
+body.dark-mode #cards #card p {
+  color: #f1f3f4;
+}
+
+body.dark-mode #cards #card img {
+  background-color: #d9cece;
+  filter: invert(1);
+}
+
+#appearance {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  object-fit: contain;
+}
