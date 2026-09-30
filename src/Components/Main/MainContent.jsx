@@ -103,7 +103,7 @@ const MainContent = ({
           {!answer && !loading && (
             <div id="greet">
               <p>
-                <span>Hi Arnab</span>
+                <span>Hello</span>
               </p>
               <p id="secondPtag">
                 Welcome to Google Gemini! How can I assist you today?
